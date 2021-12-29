@@ -53,10 +53,10 @@ body {
 }
 
 .menu {
-    left: -25%;
+    left: -22%;
     position: fixed;
     top: 10vh;
-    width: 25%;
+    width: 22%;
     height: 100vh;
     background-color: #4e4b4bd4;
     z-index: 1;
@@ -195,7 +195,165 @@ body {
 }
 
 .content-trip {
-    width: 40%;
+    min-width: 500px;
     height: 100%;
-    border: solid 1px black;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.content .type-1 {
+    background: url(./assets/1.png);
+    background-size: cover;
+}
+
+.content .type-2 {
+    background: url(./assets/2.png);
+    background-size: cover;
+}
+
+.content .type-3 {
+    background: url(./assets/3.png);
+    background-size: cover;
+}
+
+.content .type-4 {
+    background: url(./assets/4.png);
+    background-size: cover;
+}
+
+.content-trip .link {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+}
+
+.type-1 .link {
+    right: 174px;
+    bottom: 50px;
+}
+
+.type-2 .link {
+    right: 215px;
+    bottom: 106px;
+}
+
+.type-3 .link {
+    right: 170px;
+    bottom: 68px;
+}
+
+.type-4 .link {
+    right: 215px;
+    bottom: 32px;
+}
+
+.content-trip .link a {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0);
+}
+
+.container-4 {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    position: relative;
+}
+
+.container-4 .main-review {
+    position: absolute;
+    font-size: 7vh;
+    top: 4vh;
+    left: 9vw;
+}
+
+.button-container {
+    display: flex;
+    height: 50%;
+    margin-left: 10vw;
+}
+
+.review {
+    min-width: 590px;
+    height: 84%;
+    background-color: #5a57571c;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    margin-right: 7vw;
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    position: relative;
+}
+
+.review .line {
+    position: absolute;
+    right: 12px;
+    top: 9vh;
+    width: 3px;
+    height: 32vh;
+    background-color: #76abae;
+}
+
+.container-4 button {
+    border: none;
+    border: none;
+    background: #76abaea6;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    margin: 10px;
+    display: flex;
+    box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.container-4 button span {
+    font-size: 32px;
+    color: white;
+    margin-left: 14px;
+}
+
+.review .people {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 4vh;
+    left: 3vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.review .people-review {
+    position: absolute;
+    bottom: 4vh;
+    right: 6vw;
+    width: 22vw;
+    height: 30vh;
+    text-align: center;
+    color: #5a5757;
+}
+
+.people .image {
+    width: 100%;
+    height: 117%;
+}
+
+.review .name {
+    position: absolute;
+    width: 9vw;
+    height: 8vh;
+    bottom: 12vh;
+    left: 5vh;
+    text-align: center;
+    color: gray;
+    line-height: 4vh;
 }

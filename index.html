@@ -18,7 +18,7 @@
 
     <div class="menu">
         <div><a href="./index.html">Главная</a></div>
-        <div><a>Ближайшие туры</a></div>
+        <div><a href="#tur">Ближайшие туры</a></div>
         <div><a href="#about">О нас</a></div>
         <div><a>Контакты</a></div>
 
@@ -64,18 +64,52 @@
             </div>
 
         </div>
+        <a id="tur"></a>
         <div class="container-3">
             <div class="about">Ближайшие туры</div>
 
             <div class="content">
-                <div class="content-trip"></div>
-                <div class="content-trip"></div>
+                <div class="content-trip  type-1">
+                    <div class="link">
+                        <a href="./index.html">ссылка</a>
+                    </div>
+                </div>
+                <div class="content-trip  type-2">
+                    <div class="link">
+                        <a href="">ссылка</a>
+                    </div>
+                </div>
             </div>
 
             <div class="content">
-                <div class="content-trip"></div>
-                <div class="content-trip"></div>
+                <div class="content-trip  type-3">
+                    <div class="link">
+                        <a href="">ссылка</a>
+                    </div>
+                </div>
+                <div class="content-trip  type-4">
+                    <div class="link">
+                        <a href="">ссылка</a>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="container-4">
+            <div class="main-review">Отзывы</div>
+            <div class="button-container">
+                <button onclick="showPrevReview ()"><span class="material-icons">arrow_back_ios</span></button>
+                <button onclick="showNextReview ()"><span class="material-icons">arrow_forward_ios</span></button>
+            </div>
+
+            <div class="review">
+                <div class="line"></div>
+                <div class="people"><img class="image" src="./picture/11.jpeg"></div>
+                <div class="people-review">Спасибо большое за путешествие в Грузию, первый раз там был. В плане организации - все быстро и качественно, ответы и помощь по любым вопросам. Классный отель Zeg, отличная программа и экскурсии. Всем рекомендую</div>
+                <div class="name">Паша<br>&starf; &starf; &starf; &starf; &starf;</div>
+
+            </div>
+
+
         </div>
 
 
@@ -96,6 +130,7 @@
         }
     </script>
     <script src="./counter.js"></script>
+    <script src="./review.js"></script>
 </body>
 
 </html>
