@@ -172,101 +172,6 @@
         let curentIndexElement = 0;
         let curentReviewElement = 0;
         let linkElement = document.querySelector('.link');
-        let textElement = document.querySelector('.text-description');
-        let digital = document.querySelectorAll('.digit');
-        let animationText = document.querySelector('.container-3');
-        animationText.addEventListener('mousemove', counter);
-        // animationText.addEventListener('mouseout', stopCounter);
-        let time = 0;
-        let time1 = 0;
-        let time2 = 0;
-        let time3 = 0;
-        let time4 = 0;
-
-        let peopleElement = document.querySelector('.image-2');
-        let reviewElement = document.querySelector('.people-review');
-        let nameElement = document.querySelector('.name')
-
-        // let menuButtonElement = document.querySelector('.menu_button')
-        // document.body.onscroll = scroll()
-
-        // console.log(window.pageYOffset);
-
-        // function scroll() {
-        //     if (window.pageYOffset >= 1140) {
-        //         menuButtonElement.classList.add('.menu_button-scroll')
-        //     } else {
-        //         menuButtonElement.classList.remove('.menu_button-scroll')
-        //     }
-        // }
-        let startInterval
-        let startInterval1
-        let startInterval2
-        let startInterval3
-        let startInterval4
-
-
-        function counter() {
-            startInterval = setInterval(() => startCounter(), 100)
-            startInterval1 = setInterval(() => startCounter1(), 10)
-            startInterval2 = setInterval(() => startCounter2(), 1)
-            startInterval3 = setInterval(() => startCounter3(), 1)
-            startInterval4 = setInterval(() => startCounter4(), 1)
-
-            // let stopInterval = setTimeout(() => stopCounter(), 3000)
-        }
-
-        function startCounter4() {
-            if (time4 <= 14999) {
-                time4++
-                stopCounter
-
-            }
-            digital[4].innerHTML = '+ ' + time4;
-        }
-
-        function startCounter3() {
-            if (time3 <= 4999) {
-                time3++
-                stopCounter
-
-            }
-            digital[3].innerHTML = '+ ' + time3;
-        }
-
-        function startCounter2() {
-            if (time2 <= 2999) {
-                time2++
-                stopCounter
-            }
-            digital[2].innerHTML = '+ ' + time2;
-
-        }
-
-        function startCounter1() {
-            if (time1 <= 799) {
-                time1++
-                stopCounter
-            }
-            digital[1].innerHTML = '+ ' + time1;
-        }
-
-        function startCounter() {
-            debugger;
-            if (time <= 4) {
-                time++
-                stopCounter
-            }
-            digital[0].innerHTML = '+ ' + time;
-        }
-
-
-
-        function stopCounter() {
-            clearInterval(startInterval);
-        }
-
-
 
         const image = [
             './picture/DSC06772-1024x683.jpeg',
@@ -308,10 +213,6 @@
             'Экскурсии от местных жителей в каждой точке маршрута',
 
         ]
-
-        function openMenu() {
-            menuElement.classList.toggle('open_menu')
-        }
 
         function showPrevReview() {
             curentReviewElement--
