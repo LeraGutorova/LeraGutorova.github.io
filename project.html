@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel.by</title>
+    <link rel="stylesheet" type="text/css" href="./project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="menu">
+        <div class="head-parameter">
+            <div class="head-line"></div>
+            <a href="./ project.html">Главная</a>
+        </div>
+        <div class="head-parameter">
+            <div class="head-line"></div>
+            <a href="">Туры</a>
+        </div>
+        <div class="head-parameter">
+            <div class="head-line"></div>
+            <a href="#about">О нас</a>
+        </div>
+        <div class="head-parameter">
+            <div class="head-line"></div>
+            <a href="#bottom">Контакты</a>
+        </div>
+    </div>
+
+    <div class="container-1">
+        <div class="head">
+            <div class="menu_button">
+                <div>
+                    <button onclick="openMenu()">
+                        <span class="material-icons  menu_button_span">drag_handle</span>
+                    </button>
+                </div>
+            </div>
+            <div class="logo">Travel.by <span class="material-icons">flight</span>
+            </div>
+        </div>
+
+        <div class="backgroundAll">
+            <div class="background  type-1"></div>
+            <div class="background  type-2"></div>
+            <div class="background  type-3"></div>
+            <div class="background  type-4"></div>
+        </div>
+        <div class="text">Мир начинается здесь…</div>
+    </div>
+
+    <div class="container-2"></div>
+
+
+    <div class="container-4">
+        <div class="carousel">
+            <img class="image" src="./picture/DSC06772-1024x683.jpeg">
+            <div class="text-container">
+                <div class="text-description">Уникальные маршруты<br></div>
+                <a class="link" href="https://www.google.by/">Cмотреть предложения</a>
+            </div>
+            <div class="button-container">
+                <div class="button-left">
+                    <button class="showPrev" onclick="showPrev()"><span class="material-icons">arrow_back_ios</span></button>
+                </div>
+                <div class="button-right">
+                    <button class="showNext" onclick="showNext()"><span class="material-icons">arrow_forward_ios</span></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <a id="about"></a>
+    <div class="container-3 ">
+
+        <div class="about">О нас</div>
+        <div class="picture"></div>
+
+        <div class="animation-text">
+
+            <div class="counter">
+                <div class="digit"></div>
+                <div class="text-description-2">лет успешной работы</div>
+            </div>
+            <div class="counter">
+                <div class="digit"></div>
+                <div class="text-description-2">организованных туров</div>
+            </div>
+            <div class="counter">
+                <div class="digit"></div>
+                <div class="text-description-2">открытых виз</div>
+            </div>
+            <div class="counter">
+                <div class="digit"></div>
+                <div class="text-description-2">довольных туристов</div>
+            </div>
+            <div class="counter">
+                <div class="digit"></div>
+                <div class="text-description-2">километров преодолено</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-5">
+        <div class="about  about-review">Отзывы</div>
+        <div class="button-onclick">
+            <button onclick="showPrevReview ()"><span class="material-icons">arrow_back_ios</span></button>
+            <button onclick="showNextReview ()"><span class="material-icons">arrow_forward_ios</span></button>
+        </div>
+        <div class="container-5_2">
+
+            <div class="review">
+                <div class="line"></div>
+                <div class="people"><img class="image-2" src="./picture/11.jpeg"></div>
+                <div class="people-review">Спасибо большое за путешествие в Грузию, первый раз там был. В плане организации - все быстро и качественно, ответы и помощь по любым вопросам. Классный отель Zeg, отличная программа и экскурсии. Всем рекомендую</div>
+                <div class="name">Паша<br>&starf; &starf; &starf; &starf; &starf;</div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="bottom"></div>
+    <div class="container-6">
+        <div class="content  type-1">
+            <div class="content-1"> В Республике Беларусь:<br>ОФИС ПРОДАЖ<br></div>
+            <div class="content-2">
+                <div><span class="material-icons">place</span></div>
+                <div class="type-1_1">ул. Чернышевского, 5<br>Верхний этаж</div>
+            </div>
+            <div class="content-2">
+                <div><span class="material-icons">phone_in_talk</span></div>
+                <div class="type-1_1">тел.: +375 17 369 02 75<br> +375 33 613 05 35</div>
+            </div>
+            <div>travel@gmail.com</div>
+
+        </div>
+        <div class="content  type-2">
+            <div class="content-1  content-1_2">В Европе:</div>
+
+            <div class="button-ua">Украина
+                <button onclick="openInfoUA ()">
+                    <span class="material-icons">keyboard_arrow_down</span>
+                </button>
+                <div class="ua-address">Киев, Крещатик, Kyiv Worlking 3 этаж<br>info@travel.ua</div>
+            </div>
+
+            <div class="button-pol">Польша
+                <button onclick="openInfoPol ()">
+                    <span class="material-icons">keyboard_arrow_down</span>
+                </button>
+                <div class="pol-address">Вроцлав 50, 2 этаж, пом. 26<br>travel.poland@gmail.com</div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+        let uaAddress = document.querySelector('.ua-address')
+        let buttonUA = document.querySelector('.button-ua')
+        let polAddress = document.querySelector('.pol-address')
+        let contentElement = document.querySelector('.content-1_2')
+        let menuElement = document.querySelector('.menu');
+        let imageElement = document.querySelector('.image');
+        let curentIndexElement = 0;
+        let curentReviewElement = 0;
+        let linkElement = document.querySelector('.link');
+        let textElement = document.querySelector('.text-description');
+        let digital = document.querySelectorAll('.digit');
+        let animationText = document.querySelector('.container-3');
+        animationText.addEventListener('mousemove', counter);
+        // animationText.addEventListener('mouseout', stopCounter);
+        let time = 0;
+        let time1 = 0;
+        let time2 = 0;
+        let time3 = 0;
+        let time4 = 0;
+
+        let peopleElement = document.querySelector('.image-2');
+        let reviewElement = document.querySelector('.people-review');
+        let nameElement = document.querySelector('.name')
+
+        // let menuButtonElement = document.querySelector('.menu_button')
+        // document.body.onscroll = scroll()
+
+        // console.log(window.pageYOffset);
+
+        // function scroll() {
+        //     if (window.pageYOffset >= 1140) {
+        //         menuButtonElement.classList.add('.menu_button-scroll')
+        //     } else {
+        //         menuButtonElement.classList.remove('.menu_button-scroll')
+        //     }
+        // }
+        let startInterval
+        let startInterval1
+        let startInterval2
+        let startInterval3
+        let startInterval4
+
+
+        function counter() {
+            startInterval = setInterval(() => startCounter(), 100)
+            startInterval1 = setInterval(() => startCounter1(), 10)
+            startInterval2 = setInterval(() => startCounter2(), 1)
+            startInterval3 = setInterval(() => startCounter3(), 1)
+            startInterval4 = setInterval(() => startCounter4(), 1)
+
+            // let stopInterval = setTimeout(() => stopCounter(), 3000)
+        }
+
+        function startCounter4() {
+            if (time4 <= 14999) {
+                time4++
+                stopCounter
+
+            }
+            digital[4].innerHTML = '+ ' + time4;
+        }
+
+        function startCounter3() {
+            if (time3 <= 4999) {
+                time3++
+                stopCounter
+
+            }
+            digital[3].innerHTML = '+ ' + time3;
+        }
+
+        function startCounter2() {
+            if (time2 <= 2999) {
+                time2++
+                stopCounter
+            }
+            digital[2].innerHTML = '+ ' + time2;
+
+        }
+
+        function startCounter1() {
+            if (time1 <= 799) {
+                time1++
+                stopCounter
+            }
+            digital[1].innerHTML = '+ ' + time1;
+        }
+
+        function startCounter() {
+            debugger;
+            if (time <= 4) {
+                time++
+                stopCounter
+            }
+            digital[0].innerHTML = '+ ' + time;
+        }
+
+
+
+        function stopCounter() {
+            clearInterval(startInterval);
+        }
+
+
+
+        const image = [
+            './picture/DSC06772-1024x683.jpeg',
+            './picture/unnamed.jpeg',
+            './picture/222222unnamed — копия.jpeg',
+            './picture/Global_Citizen_Festival_Central_Park_New_York_City_from_NYonAir_(15351915006).jpeg',
+
+
+        ];
+        const imagePeople = [
+            './picture/11.jpeg',
+            './picture/22.jpeg',
+            './picture/33.jpeg',
+            './picture/44.jpeg',
+        ]
+        const peopleReview = [
+            'Спасибо большое за путешествие в Грузию, первый раз там был. В плане организации - все быстро и качественно, ответы и помощь по любым вопросам. Классный отель Zeg, отличная программа и экскурсии. Всем рекомендую',
+            'В мае ездили с друзьями в великолепный , насыщенный и запоминающийся тур во Львов. Путешествие по Львову было очень интересным, увлекательным и легким. Великолепная подача информации, очень познавательно и в тоже время весело и душевно.',
+            'Ездили в Египет, Хургада в июне 2021. Отель Dana beach resort 5* не оправдал мои ожидания: очень маленькая территория, ужасные рестораны, анимация, грязный пляж. ',
+            'Впервые обратился в данную турфирму, были небольшие проблемы но тур оператор быстро решил их. Все понравилось.',
+        ]
+        const name = [
+            'Паша<br>&starf; &starf; &starf; &starf; &starf;',
+            'Олечка<br>&starf; &starf; &starf; &starf; &star;',
+            'Андрей<br>&starf; &star; &star; &star; &star;',
+            'Олег<br>&starf; &starf; &starf; &star; &star;'
+        ]
+        const href = [
+            'https://www.google.by/',
+            'https://eurotrips.by/',
+            'https://www.google.by/',
+            'https://www.onliner.by/',
+
+        ];
+
+        const text = ['Уникальные маршруты',
+            'Новый год в горах ',
+            'Летом - на необитаемый остров',
+            'Экскурсии от местных жителей в каждой точке маршрута',
+
+        ]
+
+        function openMenu() {
+            menuElement.classList.toggle('open_menu')
+        }
+
+        function showPrevReview() {
+            curentReviewElement--
+            if (curentReviewElement < 0) {
+                curentReviewElement = imagePeople.length - 1;
+            }
+            changeReview()
+        }
+
+        function showNextReview() {
+            curentReviewElement++
+            if (curentReviewElement > 3) {
+                curentReviewElement = 0;
+            }
+            changeReview()
+        }
+
+        function changeReview() {
+            let imagePeopleSrc = imagePeople[curentReviewElement];
+            peopleElement.src = imagePeopleSrc;
+
+            let peopleRev = peopleReview[curentReviewElement];
+            reviewElement.innerHTML = peopleRev;
+            let nameElem = name[curentReviewElement]
+            nameElement.innerHTML = nameElem
+        }
+
+        function showPrev() {
+            curentIndexElement--
+            if (curentIndexElement < 0) {
+                curentIndexElement = image.length - 1;
+            }
+            changeImage()
+        }
+
+        function showNext() {
+            curentIndexElement++
+            if (curentIndexElement >= image.length) {
+                curentIndexElement = 0
+            }
+            changeImage()
+        }
+
+        function changeImage() {
+            let imageSrc = image[curentIndexElement];
+            imageElement.src = imageSrc;
+
+            let linkHref = href[curentIndexElement];
+            linkElement.href = linkHref;
+
+            let textCreate = text[curentIndexElement];
+            textElement.innerHTML = String(textCreate);
+        }
+
+        function openInfoUA() {
+            uaAddress.classList.toggle('ua-address-open')
+            buttonUA.classList.toggle('button-ua-down')
+
+        }
+
+        function openInfoPol() {
+            polAddress.classList.toggle('pol-address-open')
+            contentElement.classList.toggle('content-1_2-open')
+
+        }
+    </script>
+</body>
+
+</html>
