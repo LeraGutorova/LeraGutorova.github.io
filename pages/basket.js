@@ -15,12 +15,15 @@ const tours = [{
 ]
 
 let basketElement = document.querySelector('.basket');
+let sumElement = document.querySelector('.sum-span')
 
 
 let tourName;
 let tourPrice;
 let item;
-let html;
+let html
+let sum = 0;
+
 
 function addTurLviv() {
 
@@ -34,9 +37,19 @@ function addTurLviv() {
     item = document.createElement('div');
     item.classList.add('basketType');
     item.innerHTML = html;
-    basketElement.append(item)
-    openBasketElement.classList.add('open_basket')
+    basketElement.prepend(item)
+    openBasketElement.classList.add('open_basket');
+    plusSum()
+    localStorage.setItem('html', html);
+    localStorage.setItem('sum', sum)
 
+}
+
+function plusSum() {
+    tourPrice = tours[1].price;
+    sum += parseInt(tourPrice);
+
+    sumElement.innerHTML = sum
 
 }
 

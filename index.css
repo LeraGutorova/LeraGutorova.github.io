@@ -60,7 +60,7 @@ body {
     height: 100vh;
     background-color: #4e4b4bd4;
     z-index: 1;
-    transition: left 1s linear;
+    transition: left 0.4s linear;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -349,4 +349,117 @@ body {
     text-align: center;
     color: gray;
     line-height: 4vh;
+}
+
+.container-5 {
+    height: 52vh;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-shadow: 0px 0px 11px 3px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.container-5 .contact {
+    position: absolute;
+    top: -15vh;
+    left: 0px;
+    width: 245px;
+    height: 60px;
+    font-size: 6vh;
+    color: #343232e3;
+    font-weight: bold;
+    text-shadow: 0px 0px 24px rgb(150 150 150 / 89%);
+}
+
+.container-5 .type-1 {
+    background-color: #efefef;
+}
+
+.container-5 .type-2 {
+    background-color: #ec9eaf30;
+}
+
+.container-5 .content {
+    width: 50%;
+    height: 100%;
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    font-size: 20px;
+    color: #4e4b4b;
+    padding-top: 4vh;
+    line-height: 5vh;
+    text-shadow: 0px 0px 14px rgba(150, 150, 150, 1);
+}
+
+.container-5 .content-1 {
+    margin-bottom: 25px;
+    transition: 0.5s linear;
+}
+
+.container-5 .open-content-1 {
+    margin-bottom: -10px;
+}
+
+.container-5 .content-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-5 .address {
+    margin-left: 10px;
+    margin-bottom: 12px;
+}
+
+.button-ua,
+.button-pol {
+    width: 420px;
+    height: 85px;
+    transition: 0.5s linear;
+}
+
+.pol-address,
+.ua-address {
+    font-size: 18px;
+    color: #4e4b4b;
+    text-shadow: 0px 0px 14px rgba(150, 150, 150, 1);
+}
+
+.button-ua-down {
+    margin-bottom: 10%;
+}
+
+.button-ua button,
+.button-pol button {
+    width: 16%;
+    height: 100%;
+    margin-left: -12px;
+    background: transparent;
+    border: none;
+}
+
+.button-ua span,
+.button-pol span {
+    vertical-align: -1vh;
+    font-size: 30px;
+}
+
+.button-ua button:hover .button-ua,
+.button-pol button:hover .button-pol {
+    text-decoration: underline;
+}
+
+.ua-address,
+.pol-address {
+    display: none;
+}
+
+.button-ua .ua-address-open,
+.button-pol .pol-address-open {
+    display: block;
 }
