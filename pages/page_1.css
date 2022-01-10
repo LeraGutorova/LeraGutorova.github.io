@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+.material-icons {
+    font-family: Material Icons;
+}
+
+.head {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 11px 13px 3px rgba(0, 0, 0, 0.41);
+    -webkit-box-shadow: 0px 11px 13px 3px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0px 11px 13px 3px rgba(0, 0, 0, 0.41);
+    color: #0000009c;
+    z-index: 1;
+}
+
+.head .icons span {
+    font-size: 36px;
+}
+
+.logo {
+    font-size: 10px;
+}
+
+.menu_button {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    z-index: 1;
+}
+
+.menu_button span {
+    font-size: 6vh;
+    color: #0000009c;
+}
+
+.menu_button button {
+    background-color: inherit;
+    border: none;
+}
+
+.menu {
+    left: -22%;
+    position: fixed;
+    top: 10vh;
+    width: 22%;
+    height: 100vh;
+    background-color: #4e4b4bd4;
+    z-index: 1;
+    transition: left 1s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu div {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 3;
+}
+
+.menu div a {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.open_menu {
+    left: 0px;
+    position: fixed;
+}
+
+.common {
+    width: 100vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.description {
+    background-color: #efefef;
+    ;
+}
+
+.container-1 {
+    height: 85vh;
+    background: url(./picture/page_1-1.png);
+    background-size: 100%;
+    margin-top: 10vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container-2 {
+    height: 50vh;
+    background-color: beige;
+}
+
+.container-3 {
+    height: 80vh;
+    background: url(./picture/page_1-2.png);
+    background-size: 100%;
+    margin-top: 10vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container-4 {
+    height: 85vh;
+    background: url(./picture/page_1-3.png);
+    background-size: 100%;
+    margin-top: 10vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container-5 {
+    height: 95vh;
+    background: url(./picture/page_1-4.png);
+    background-size: 100%;
+    margin-top: 10vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container-6 {
+    height: 90vh;
+    background: url(./picture/page_1-5.png);
+    background-size: 100%;
+    margin-top: 10vh;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container-7 {
+    height: 90vh;
+    background: url(./picture/page_1-6.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 10vh;
+}
+
+.container-8 {
+    height: 90vh;
+    background: url(./picture/page_1-7.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container-9 {
+    height: 90vh;
+    background: url(./picture/page_1-8.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container-10 {
+    height: 90vh;
+    background: url(./picture/page_1-9.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
