@@ -28,6 +28,19 @@
     <div class="menu_button">
         <button onclick="openMenu()"><span class="material-icons">drag_handle</span></button>
     </div>
+
+    <div class="basket">
+        <div class="basketType">
+            <div class="tourName"></div>
+            <div class="tourPrice"></div>
+            <div class="deleteTur"><button onclick=""><span class="material-icons">delete_outline</span></button></div>
+        </div>
+    </div>
+    <div class="basket-container">
+        <button onclick="openBasket()"> <span class="material-icons">shopping_basket</span></button>
+    </div>
+
+
     <div class="common">
 
         <div class="container-1"></div>
@@ -36,7 +49,7 @@
             <div id="data" class="container-2">
                 <div class="container-2-1"></div>
                 <div class="container-2-2">
-                    <button on></button>
+                    <div class="pick"><button onclick="addTurLviv()"></button></div>
                 </div>
             </div>
             <div id="about-2" class="container-3"></div>
@@ -60,12 +73,17 @@
     <a id="bottom"></a>
     <script>
         let openMenuElement = document.querySelector('.menu');
+        let openBasketElement = document.querySelector('.basket')
 
         function openMenu() {
             openMenuElement.classList.toggle('open_menu')
+        }
 
+        function openBasket() {
+            openBasketElement.classList.toggle('open_basket')
         }
     </script>
+    <script src="./basket.js"></script>
 </body>
 
 </html>
