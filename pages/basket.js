@@ -21,7 +21,7 @@ let sumElement = document.querySelector('.sum-span')
 let tourName;
 let tourPrice;
 let item;
-let html
+let html;
 let sum = 0;
 
 
@@ -56,4 +56,11 @@ function plusSum() {
 function deleteTur() {
 
 
+}
+
+
+let openBasketElement = document.querySelector('.basket')
+
+function openBasket() {
+    openBasketElement.classList.toggle('open_basket')
 }
