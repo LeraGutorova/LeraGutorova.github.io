@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: sans-serif
 }
 
 body {
@@ -25,6 +25,7 @@ body {
     -moz-box-shadow: 0px 11px 13px 3px rgba(0, 0, 0, 0.41);
     color: #0000009c;
     z-index: 1;
+    background-color: white;
 }
 
 .head .icons span {
@@ -57,7 +58,7 @@ body {
     position: fixed;
     top: 10vh;
     width: 22%;
-    height: 100vh;
+    height: 90vh;
     background-color: #4e4b4bd4;
     z-index: 1;
     transition: left 0.4s linear;
@@ -113,12 +114,9 @@ body {
     height: 10vh;
     left: 2vw;
     top: -5vh;
-}
-
-.container-2 .about {
-    background: url(./assets/about.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    font-size: 50px;
+    color: #4e4b4b;
+    font-weight: bold;
 }
 
 .container-2 .picture {
@@ -170,91 +168,260 @@ body {
 }
 
 .container-3 {
-    height: 150vh;
+    height: 200vh;
     background-color: rgb(239 239 239);
     position: relative;
     padding-top: 45px;
+    margin-top: 100px;
 }
 
 .container-3 .nextTur {
-    width: 36vw;
+    width: 100%;
     height: 75px;
     margin-left: 6vw;
-}
-
-.container-3 .nextTur {
-    background: url(./assets/next\ tur.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #4e4b4b;
 }
 
 .container-3 .content {
-    height: 40%;
+    height: 38%;
     width: 100%;
     margin-top: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-.content-trip {
-    min-width: 500px;
+.container-3 .content .tur-1 {
+    width: 500px;
     height: 100%;
-    background-size: cover;
+    margin: 30px;
+    background: url(./assets/tur-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
     position: relative;
-    text-align: center;
 }
 
-.content .type-1 {
-    background: url(./assets/1.png);
-    background-size: cover;
+.container-3 .content .tur-2 {
+    width: 500px;
+    margin: 30px;
+    height: 100%;
+    background: url(./assets/tur-2.jpg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 100%;
+    position: relative;
 }
 
-.content .type-2 {
-    background: url(./assets/2.png);
-    background-size: cover;
+.container-3 .content .tur-3 {
+    width: 500px;
+    height: 100%;
+    margin: 30px;
+    background: url(./assets/tur-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    position: relative;
 }
 
-.content .type-3 {
-    background: url(./assets/3.png);
-    background-size: cover;
+.container-3 .content .tur-4 {
+    width: 500px;
+    height: 100%;
+    margin: 30px;
+    background: url(./assets/tur-4.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 100%;
+    position: relative;
 }
 
-.content .type-4 {
-    background: url(./assets/4.png);
-    background-size: cover;
-}
-
-.content-trip .link {
-    width: 100px;
-    height: 40px;
+.container-3 .content .tur-1 .place {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 76%;
+    height: 78%;
+    background-color: #2dc8d6;
     position: absolute;
+    left: 0px;
+    top: 30px;
 }
 
-.type-1 .link {
-    right: 174px;
-    bottom: 50px;
+.container-3 .content .tur-1:hover .place {
+    background-color: #2dc8d6;
+    opacity: 0.8;
 }
 
-.type-2 .link {
-    right: 215px;
-    bottom: 106px;
+.container-3 .content .tur-1 .place .city,
+.container-3 .content .tur-2 .place .city,
+.container-3 .content .tur-3 .place .city,
+.container-3 .content .tur-4 .place .city {
+    text-align: end;
+    width: 100%;
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    padding-right: 10px;
 }
 
-.type-3 .link {
-    right: 170px;
-    bottom: 68px;
+.container-3 .content .tur-1 .place .date,
+.container-3 .content .tur-2 .place .date,
+.container-3 .content .tur-3 .place .date,
+.container-3 .content .tur-4 .place .date {
+    width: 100%;
+    height: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 10px;
 }
 
-.type-4 .link {
-    right: 215px;
-    bottom: 32px;
+.container-3 .content .tur-1 .place .date .date-text,
+.container-3 .content .tur-1 .place .date .date-text,
+.container-3 .content .tur-2 .place .date .date-text,
+.container-3 .content .tur-3 .place .date .date-text,
+.container-3 .content .tur-4 .place .date .date-text {
+    font-size: 16px;
+    color: white;
+    height: 18%;
 }
 
-.content-trip .link a {
-    font-size: 24px;
-    color: rgba(0, 0, 0, 0);
+.container-3 .content .tur-1 .place .date .date-exact,
+.container-3 .content .tur-2 .place .date .date-exact,
+.container-3 .content .tur-3 .place .date .date-exact,
+.container-3 .content .tur-4 .place .date .date-exact {
+    width: 70%;
+    height: 26%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container-3 .content .tur-1 .place .date .date-exact div,
+.container-3 .content .tur-2 .place .date .date-exact div,
+.container-3 .content .tur-3 .place .date .date-exact div,
+.container-3 .content .tur-4 .place .date .date-exact div {
+    width: 44%;
+    height: 84%;
+    background-color: white;
+    border-radius: 18px;
+    color: #4d4b4b;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    margin: 4px;
+}
+
+.container-3 .content .tur-1 .place .direction,
+.container-3 .content .tur-2 .place .direction,
+.container-3 .content .tur-3 .place .direction,
+.container-3 .content .tur-4 .place .direction {
+    font-size: 13px;
+    padding-right: 10px;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-3 .content .tur-1 .place .follow,
+.container-3 .content .tur-2 .place .follow,
+.container-3 .content .tur-3 .place .follow,
+.container-3 .content .tur-4 .place .follow {
+    width: 30%;
+    height: 9%;
+    border-radius: 20px;
+    margin-right: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.container-3 .content .tur-1 .place .follow {
+    background-color: #fb306a;
+}
+
+.container-3 .content .tur-2 .place .follow {
+    background-color: #2dc8d5;
+}
+
+.container-3 .content .tur-3 .place .follow {
+    background-color: #fdbe00;
+}
+
+.container-3 .content .tur-4 .place .follow {
+    background-color: #126eb8
+}
+
+.container-3 .content .tur-1 .place .follow a,
+.container-3 .content .tur-2 .place .follow a,
+.container-3 .content .tur-3 .place .follow a,
+.container-3 .content .tur-4 .place .follow a {
+    text-decoration: none;
+    color: white;
+    font-size: 9px;
+}
+
+.container-3 .content .tur-2 .place {
+    width: 76%;
+    height: 78%;
+    background-color: #fb306a;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.container-3 .content .tur-2:hover .place {
+    background-color: #fb306a;
+    opacity: 0.8;
+}
+
+.container-3 .content .tur-3 .place {
+    width: 76%;
+    height: 78%;
+    background-color: #106fb9;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.container-3 .content .tur-3:hover .place {
+    background-color: #106fb9;
+    opacity: 0.8;
+}
+
+.container-3 .content .tur-4 .place {
+    width: 76%;
+    height: 78%;
+    background-color: #febf00;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.container-3 .content .tur-4:hover .place {
+    background-color: #febf00;
+    opacity: 0.8;
 }
 
 .container-4 {
@@ -357,7 +524,7 @@ body {
 }
 
 .container-5-1 {
-    height: 85vh;
+    height: 73vh;
     background-color: #eeefef;
     display: flex;
     flex-direction: column;
@@ -365,39 +532,22 @@ body {
 }
 
 .container-5 {
-    height: 59%;
+    height: 70%;
     display: flex;
     flex-direction: row;
     position: relative;
 }
 
 .container-5 .contact {
-    background: url(./assets/contact.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    font-size: 35px;
     position: absolute;
-    top: -15vh;
+    top: -12vh;
     left: 3vw;
     width: 282px;
-    height: 70px;
+    height: 69px;
+    color: #4d4b4b;
+    font-weight: bold;
 }
-
-
-/* .container-5 .contact,
-.main-review {
-    position: absolute;
-    top: -15vh;
-    left: 3vw;
-    width: 282px;
-    height: 70px;
-} */
-
-
-/* .container-4 .main-review {
-    background: url(./assets/about.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-} */
 
 .container-4 .main-review {
     top: -5vh;
@@ -448,50 +598,51 @@ body {
 
 .container-6 {
     height: 80vh;
-    background-color: #e5e5e6;
+    background-color: #efefef;
     position: relative;
 }
 
 .container-6 .review-title {
-    height: 20%;
-    background-color: #eeefef;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.review-title img {
-    height: 100%;
+    height: 14%;
+    font-size: 42px;
+    font-weight: bolder;
+    color: #4e4b4b;
+    padding-left: 6vw;
+    margin-bottom: 4vh;
 }
 
 .container-6 .review-button {
     position: absolute;
-    top: 15px;
-    right: 90px;
-    height: 16%;
-    width: 150px;
+    top: -1vh;
+    right: 6vw;
+    height: 12%;
+    width: 139px;
     display: flex;
     flex-direction: row;
-    background: url(./assets/review-button.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
-.review-button button {
+.container-6 .review-button span {
+    font-size: 30px;
+    color: #4d4b4b;
+}
+
+.container-6 .review-button button {
     width: 50%;
     border: none;
     background-color: inherit;
     height: 100%;
 }
 
-.form {
+.container-6 .form {
     display: flex;
     flex-direction: row;
-    height: 80%;
+    height: 75%;
+    justify-content: center;
 }
 
-.review-form .form img {
-    width: 100%;
+.container-6 .form img {
+    width: 95%;
+    background-size: 100%;
 }
 
 .button-ua,
@@ -547,11 +698,14 @@ body {
     top: 10px;
     right: 20px;
     z-index: 1;
+    border-radius: 50%;
+    background: #636363;
+    overflow: hidden;
 }
 
 .basket-container span {
     font-size: 5vh;
-    color: #0000009c;
+    color: white;
 }
 
 .basket-container button {
@@ -565,7 +719,7 @@ body {
     top: 10vh;
     width: 35%;
     min-height: 55%;
-    background-color: #9f9c9ca3;
+    background-color: white;
     z-index: 1;
     transition: right 1s linear;
     display: flex;
@@ -584,9 +738,7 @@ body {
     display: flex;
     align-items: center;
     font-size: 22px;
-    color: #7d213beb;
-    font-weight: bold;
-    text-shadow: 2px 2px 2px rgb(255 255 255 / 26%);
+    color: black
 }
 
 .basket .sum-dop {

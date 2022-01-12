@@ -134,6 +134,7 @@ body {
     -moz-box-shadow: 0px 11px 13px 3px rgba(0, 0, 0, 0.41);
     color: #0000009c;
     z-index: 1;
+    background-color: white;
 }
 
 .head .icons span {

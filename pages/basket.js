@@ -30,7 +30,7 @@ function addTurLviv() {
     tourName = tours[1].namePlace;
     tourPrice = tours[1].price;
     html = '';
-    html += `<div class="tourName">${tourName}</div>
+    html += `<div class="tourName" iindex>${tourName}</div>
 <div class="tourPrice">${tourPrice}</div>
 <div class="deleteTur"><button onclick="deleteTur"><span class="material-icons">delete_outline</span></button></div>`
 
@@ -58,9 +58,6 @@ function deleteTur() {
 
 }
 
-
-let openBasketElement = document.querySelector('.basket')
-
 function openBasket() {
-    openBasketElement.classList.toggle('open_basket')
+    basketElement.classList.toggle('open_basket')
 }
