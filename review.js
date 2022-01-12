@@ -6,14 +6,29 @@ const reviewForm = [
 ]
 
 currentIndex = 0;
-let imageElement = document.querySelector('.image-2')
+
+const IMAGE_WIDTH = 100;
+
 let formElement = document.querySelector('.form')
+renderForm()
+
 
 
 function renderForm() {
-    let item = reviewForm[currentIndex]
-    imageElement.src = item;
+    let html = '';
+    for (let i = 0; i < reviewForm.length; i++) {
+        let arr = reviewForm[i]
+        html += `<img class="image-2" src="${arr}">`
+        formElement.innerHTML = html;
+    }
 
+}
+
+
+function render() {
+
+    const offset = currentIndex * IMAGE_WIDTH;
+    formElement.style.transform = `translateX(-${offset}%)`
 }
 
 function prevReview() {
@@ -21,10 +36,9 @@ function prevReview() {
     if (currentIndex < 0) {
         currentIndex = reviewForm.length - 1;
     }
-    renderForm()
+
+    render()
 }
-
-
 
 
 function nextReview() {
@@ -32,5 +46,6 @@ function nextReview() {
     if (currentIndex > reviewForm.length - 1) {
         currentIndex = 0;
     }
-    renderForm()
+
+    render()
 }
