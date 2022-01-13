@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lviv</title>
+    <link rel="stylesheet" type="text/css" href="./page_Lviv.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">EUROTRIPS</div>
+        <div class="icons"><span class="material-icons">kayaking</span></div>
+    </div>
+
+    <div class="menu">
+        <div><a href="./index.html">Главная</a></div>
+        <div><a href="#tur">Программа тура</a></div>
+        <div><a href="#included">Включено в тур</a></div>
+        <div><a href="#about">О нас</a></div>
+        <div><a href="#important">Важно!</a></div>
+        <div><a href="#review">Отзывы</a></div>
+
+        <div><a href="#bottom">Контакты</a></div>
+
+    </div>
+    <div class="menu_button">
+        <button onclick="openMenu()"><span class="material-icons">drag_handle</span></button>
+    </div>
+    <div class="basket">
+        <div class="sum  sum-dop">Выбранные туры:</div>
+        <div class="sum">Cумма:&#8194;<span class="sum-span"></span> &#8194;BYN</div>
+    </div>
+    <div class="basket-container">
+        <button onclick="openBasket()"> <span class="material-icons">shopping_basket</span></button>
+    </div>
+
+    <div class="common">
+
+        <div class="container-1">
+            <div class="city">ЛЬВОВ 2 НОЧИ + КАРПАТЫ</div>
+            <div class="direction">Минск&#8594;Львов&#8594;Тусань&#8594;Львов&#8594;Минск</div>
+
+        </div>
+
+        <div class="container-2">
+
+
+
+        </div>
+
+        <a id="about"></a>
+        <div class="container-3">
+
+            <div class="title">EUROTRIPS &#8212; ЭТО</div>
+            <div class="content">
+                <div class="description">
+                    <div class="badge"><img src="./assets/badge-1.png"></div>
+                    <div class="text">
+                        <div class="text-title">КРУТАЯ КОМАНДА</div>
+                        <div class="text-description">
+                            В каждый тур едет сопровождающий и фотограф, а в каждом городе тебя ждёт локальный эксперт крутых мест
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="badge"><img src="./assets/badge-4.png"></div>
+                    <div class="text">
+                        <div class="text-title">УНИКАЛЬНЫЕ АКТИВНОСТИ</div>
+                        <div class="text-description">
+                            Самые уникальные маршруты и развлечения по Европе
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="badge"><img src="./assets/badge-3.png"></div>
+                    <div class="text">
+                        <div class="text-title">ТОЛЬКО МОЛОДЁЖЬ</div>
+                        <div class="text-description">
+                            Возвраcт наших туристов говорит сам за себя - 18-35 лет.
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="badge"><img src="./assets/badge-2.png"></div>
+                    <div class="text">
+                        <div class="text-title">СВОБОДА ВЫБОРА И ДЕЙСТВИЙ</div>
+                        <div class="text-description">
+                            Выбирай только те активности, которые нравятся и наслаждайся свободным временем в каждой новой точке маршрута
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a id="tur"></a>
+        <div class="container-4">
+
+            <div class="title">ПРОГРАММА ТУРА</div>
+            <div class="content">
+                <div class="day">1 день</div>
+
+                <div class="description">
+
+                    <div class="definition">
+                        <div class="place-title">МИНСК</div>
+                        <div class="text">Тур без карантина и ПЦР! <br>Отправление из Минска в 18-00. Ты – в молодёжной группе Eurotrips, часть легендарной #eurotripsfamily.<br> Автобус с музыкой, фильмами и компанией – это только начало. И запомни, как встретишь - так
+                            и проведешь!
+                            <br>Тебя ждёт знакомство с группой, сопровождающим и фотографом, граница, duty free и крутая атмосфера наших путешествий!<br> Ночной переезд во Львов.</div>
+                    </div>
+
+                    <div class="line">
+                        <div></div>
+                        <div class="no-color"></div>
+                        <div></div>
+                    </div>
+
+                    <div class="definition"><img src="./assets/page-1-picture-1.png"></div>
+
+                </div>
+            </div>
+
+            <div class="content  dop-2">
+                <div class="day">2 день</div>
+
+                <div class="description">
+                    <div class="definition"><img src="./assets/page-1-picture-2.png"></div>
+                    <div class="line  dop-2">
+                        <div></div>
+                        <div class="no-color"></div>
+                        <div></div>
+                        <div class="no-color"></div>
+                        <div></div>
+                    </div>
+                    <div class="definition">
+                        <div class="place-title">ЛЬВОВ</div>
+                        <div class="text  dop-2">По прибытию в город позавтракаем в секретном месте.
+                            <p></p>Скажем сразу – по утрам туда выстраиваются очереди, чтобы отменно позавтракать!
+                            <p></p> 09:00 Прогулка с местным жителем. Местный житель устроит для нас прогулку по основным местам Львова! Расскажет истории о современной жизни и загадках города, а так же поведает о множестве интересных мест!
+                            <p></p>Вместе мы исследуем Еврейский, Армянский кварталы города, знаменитый Итальянский дворик, услышим захватывающие истории из прошлого и настоящего Львова. Далее отправляемся на гору “Высокий замок”, откуда открывается захватывающая
+                            панорама Львова. Здесь вы просто обязаны сделать отличные снимки с видом на город.
+                            <p></p> 14.00 Заселение в отель и отдых. Впереди тебя ждет 3 дня приключений в стиле #eurotrips А как насчёт того, чтобы познакомиться с нетипичным европейским Львовом? Сегодня наш местный житель (доп.экскурсия 10$) проведёт тебя
+                            по самым тайным местам города! Приготовься, ты будешь очень удивлён, впереди 2-х часовая прогулка с крутым местным жителем! <br>После отправимся на типичную дегустацию настоечек: 5 позиций + лёгкие закуски. Стоимость 15$.
+                            <p></p> Ночь в отеле или на танцполе.</div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="content  dop-2">
+                <div class="day">3 день</div>
+
+                <div class="description">
+
+                    <div class="definition">
+                        <div class="place-title">ИСТОРИКО-КУЛЬТУРНЫЙ ЗАПОВЕДНИК «ТУСТАНЬ»</div>
+                        <div class="text  dop-2">08:00 - завтрак в отеле.
+                            <p></p> 08:30- свободное время.
+                            <p></p>Для желающих предлагаем поездку в Карпаты на целый день (доп. плата 20$).
+                            <p></p> Посетим историко-культурный заповедник «Тустань», который считается одним из самых живописных мест Западной Украины. Наскальная крепость Тустань – памятник истории, археологии, архитектуры и природы, не имеющий аналогов
+                            в Европе. (входные билеты 52гр.)
+                            <p></p>После прогулки по скалам отправляемся нас ждёт обед на свежем воздухе - грибная юшка, шашлык, овощи на гриле, банош и конечно же местные Карпатские чаи и наливки.
+                            <p></p>Следующим этапом будет подъем на канатно-кресельной дороге на гору Высокий верх (высота 1243 м). С вершины открывается захватывающая панорама гор и видно даже Закарпатскую область.(дополнительно оплачивается подъемник)
+                            <p></p>В период закрытия подъемников туристы посещают водопад Каменка и Мертвое озеро.(входные билеты 10гр)
+                            <p></p> Возвращение во Львов
+
+                        </div>
+                    </div>
+
+                    <div class="line  dop-2">
+                        <div></div>
+                        <div class="no-color"></div>
+                        <div></div>
+                        <div class="no-color"></div>
+                        <div></div>
+                    </div>
+
+                    <div class="definition"><img src="./assets/page-1-picture-3.png"></div>
+
+                </div>
+            </div>
+            <div class="content">
+                <div class="day">4 день</div>
+
+                <div class="description">
+                    <div class="definition  dop-3"><img src="./assets/page-1-picture-4.png"></div>
+                    <div class="line">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="definition">
+                        <div class="place-title  dop-3">ЛЬВОВ</div>
+                        <div class="text  dop-3">
+                            <p></p>08:30 - завтрак в отеле и выселение и выезд в город.
+                            <p></p> 10:00-12:00 - захватывающая экскурсия по подземельям Львова. Далеко не каждый город может похвастаться наличием подземелий, чего нельзя сказать о Львове.
+                            <p></p> В ходе экскурсии мы посетим многоярусные подземелья костела Иезуитов с их захватывающей историей, спустимся в подземелья аптеки-музея “Под черным орлом” где ознакомимся с уникальной экспозицией, которая посвящена не только
+                            истории основания и развития аптеки, но и вопросам развития европейской фармацевтики и врачебного дела.
+                            <p></p> 12:00 - Свободное время. По желанию возможно посещение торгового центра “Форум”, от которого будет осуществляться выезд из Львова ( ориентировочно в 17.00. Время может быть скорректировано в зависимости от ситуации на
+                            границе.)
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="content">
+                <div class="day">5 день</div>
+
+                <div class="description">
+
+                    <div class="definition">
+                        <div class="place-title">МИНСК</div>
+                        <div class="text">Прибытие в Минск ориентировочно 8:00
+                            <p></p>Ты рассматриваешь фото и планируешь следующий тур с #eurotripsfamily
+                            <p></p> (!) время прибытия в Минск- ориентировочно, настоятельно не рекомендуем покупать билеты на обратный поезд. цены на экскурсии могут незначительно меняться, в зависимости от сезона или других не зависящих от нас обстоятельств;</div>
+                    </div>
+
+                    <div class="line">
+                        <div></div>
+                        <div class="no-color"></div>
+                        <div></div>
+                    </div>
+
+                    <div class="definition"><img src="./assets/page-1-picture-5.png"></div>
+                    <a id="included"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="included">
+            <div class="title">ВКЛЮЧЕНО В ТУР:</div>
+            <div class="text-picture"></div>
+        </div>
+        <a id="important"></a>
+        <div class="container-3  dop-1">
+
+            <div class="title  dop-1">ЧТО ВАЖНО</div>
+
+            <div class="content  dop-1">
+                <div class="description  dop-1 ">
+                    <div class="badge"><img src="./assets/page-1-important-1.png"></div>
+                    <div class="text">
+                        <div class="text-title">БРОНИРУЙ СЕЙЧАС И ПЛАТИ ПОТОМ</div>
+                        <div class="text-description">
+                            Для бронирования гарантированного места в туре достаточно оплатить только тур услугу 50 либо 100 BYN.
+                        </div>
+                    </div>
+                </div>
+                <div class="description  dop-1 ">
+                    <div class="badge"><img src="./assets/page-1-important-2.png"></div>
+                    <div class="text">
+                        <div class="text-title">ЕХАТЬ ОДНОМУ - НЕ СТРАШНО</div>
+                        <div class="text-description">
+                            Если друзья тормозят с решением о путешествии, не отказывайся от новых впечатлений. Ведь в дороге ты найдешь еще 50 новых друзей #eurotripsfamily.
+                        </div>
+                    </div>
+                </div>
+                <div class="description  dop-1 ">
+                    <div class="badge"><img src="./assets/page-1-important-3.png"></div>
+                    <div class="text">
+                        <div class="text-title">ДОКУМЕНТЫ В ДОРОГУ</div>
+                        <div class="text-description">
+                            Для въезда на территорию ЕС необходима шенген виза (для граждан РБ и РФ) и паспорт не старше 10 лет. Если ты еще не обладатель шенген визы, то наши партнёры помогут с ее открытием.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content  dop-2">
+                <div class="description  dop-1 ">
+                    <div class="badge"><img src="./assets/page-1-important-4.png"></div>
+                    <div class="text">
+                        <div class="text-title">ВОЗВРАТ ОПЛАТЫ</div>
+                        <div class="text-description">
+                            Сроки расторжения и отмены тура будут указаны в твоём договоре. Как правило, по основным маршрутам расторжение договора без штрафа не позднее, чем за 14 дней до выезда.
+                        </div>
+                    </div>
+                </div>
+                <div class="description  dop-1 ">
+                    <div class="badge"><img src="./assets/page-1-important-5.png"></div>
+                    <div class="text">
+                        <div class="text-title">КОМФОРТ ПРЕВЫШЕ ВСЕГО</div>
+                        <div class="text-description">
+                            Автобусы, на которых мы катаем в Европу, просторные и комфортные для длительных переездов. Сиденья откидываются, есть музыка, телевизоры и, конечно, кондиционеры.
+                        </div>
+                    </div>
+                </div>
+                <div class="description  dop-1 ">
+                    <div class="badge"><img src="./assets/page-1-important-6.png"></div>
+                    <div class="text">
+                        <div class="text-title">#EUROTRIPSFAMILY</div>
+                        <div class="text-description">
+                            Каждый наш турист после первой поездки получает скидку 50 % на тур услугу + для наших клиентов часто проходят акции, вечеринки и предоставляются бонусы
+                        </div>
+                    </div>
+                </div>
+                <a id="review"></a>
+            </div>
+            <div class="container-6">
+                <div class="review-title">ОТЗЫВЫ</div>
+                <div class="review-button">
+                    <button class="prev" onclick="prevReview()"><span class="material-icons">arrow_back_ios</span></button>
+                    <button class="next" onclick="nextReview()"><span class="material-icons">arrow_forward_ios</span></button>
+                </div>
+                <div class="form-container">
+                    <div class="form"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-5-1">
+            <div class="container-5">
+                <div class="contact">КОНТАКТЫ</div>
+                <div class="content  type-1">
+                    <div class="content-1"> В Республике Беларусь:<br>ОФИС ПРОДАЖ<br></div>
+                    <div class="content-2">
+                        <div><span class="material-icons">place</span></div>
+                        <div class="address">ул. Чернышевского, 5<br>Верхний этаж</div>
+                    </div>
+                    <div class="content-2">
+                        <div><span class="material-icons">phone_in_talk</span></div>
+                        <div class="address">тел.: +375 17 369 02 75<br> +375 33 613 05 35</div>
+                    </div>
+                    <div>travel@gmail.com</div>
+
+                </div>
+
+                <div class="content  type-2">
+                    <div class="content-1  content-dop">В Европе:</div>
+
+                    <div class="button-ua">Украина
+                        <button onclick="openInfoUA ()">
+                        <span class="material-icons">keyboard_arrow_down</span>
+                    </button>
+                        <div class="ua-address">Киев, Крещатик, Kyiv Worlking 3 этаж<br>info@travel.ua</div>
+                    </div>
+
+                    <div class="button-pol">Польша
+                        <button onclick="openInfoPol ()">
+                        <span class="material-icons">keyboard_arrow_down</span>
+                    </button>
+                        <div class="pol-address">Вроцлав 50, 2 этаж, пом. 26<br>travel.poland@gmail.com</div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+        <a id="bottom"></a>
+    </div>
+
+    <script>
+        let uaAddressElement = document.querySelector('.ua-address')
+        let buttonUAElement = document.querySelector('.button-ua')
+        let polAddress = document.querySelector('.pol-address')
+        let contentElement = document.querySelector('.content-dop')
+
+        function openInfoUA() {
+            uaAddressElement.classList.toggle('ua-address-open')
+            buttonUAElement.classList.toggle('button-ua-down')
+
+        }
+
+        function openInfoPol() {
+            polAddress.classList.toggle('pol-address-open')
+            contentElement.classList.toggle('open-content-1')
+
+        }
+
+
+        let openMenuElement = document.querySelector('.menu');
+
+        function openMenu() {
+            openMenuElement.classList.toggle('open_menu')
+
+        }
+    </script>
+    <script src="./basket.js"></script>
+    <script src="./review.js"></script>
+</body>
+
+</html>
