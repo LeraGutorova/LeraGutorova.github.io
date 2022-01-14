@@ -91,13 +91,12 @@ body {
     right: 20px;
     z-index: 1;
     border-radius: 50%;
-    background: #636363;
     overflow: hidden;
 }
 
 .basket-container span {
     font-size: 5vh;
-    color: white;
+    color: #636363;
 }
 
 .basket-container button {
@@ -106,46 +105,58 @@ body {
 }
 
 .basket {
-    right: -35%;
     position: fixed;
-    top: 10vh;
-    width: 35%;
-    min-height: 55%;
+    top: 28%;
+    right: -105%;
+    transform: translateX(-50%);
+    width: 55%;
+    min-height: 44%;
     background-color: white;
     z-index: 1;
-    transition: right 1s linear;
+    transition: right 0.5s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 50px;
     padding-top: 50px;
+    overflow-y: auto;
+}
+
+.open_basket {
+    right: -5%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    box-shadow: 0px 11px 13px 3px rgba(0, 0, 0, 0.41);
+    -webkit-box-shadow: 0px 11px 13px 3px rgba(0, 0, 0, 0.41);
+    -moz-box-shadow: 0px 11px 13px 3px rgba(0, 0, 0, 0.41);
 }
 
 .sum {
     position: absolute;
-    width: 100%;
     height: 50px;
-    bottom: 0px;
-    left: 30px;
+    top: 0px;
+    right: 30px;
     display: flex;
     align-items: center;
-    font-size: 22px;
-    color: black
+    font-size: 19px;
+    color: black;
+    text-shadow: 1px 1px 8px rgba(207, 150, 150, 1);
 }
 
 .basket .sum-dop {
     top: 0px;
+    left: 30px;
+    text-shadow: none
 }
 
-.open_basket {
-    right: 0%;
-    padding-bottom: 50px;
-    padding-top: 50px;
+.basket-2 {
+    width: 100%;
+    height: 44px;
 }
 
 .basketType {
     width: 100%;
-    height: 44px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -153,14 +164,22 @@ body {
 }
 
 .tourName {
-    width: 70%;
+    width: 50%;
     height: 100%;
-    color: white;
-    font-size: 20px;
+}
+
+.tourDate {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(150 150 150 / 33%);
 }
 
 .tourPrice {
-    width: 18%;
+    width: 20%;
     height: 100%;
 }
 
@@ -170,10 +189,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 19px;
+    border-bottom: 1px solid rgb(150 150 150 / 33%);
 }
 
 .deleteTur {
-    width: 12%;
+    width: 15%;
     height: 100%;
     background-color: #eb3770d6;
     display: none;
@@ -233,7 +254,77 @@ body {
 
 .container-2 {
     width: 100%;
-    height: 80vh;
+    height: 72vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+}
+
+.container-2 .title {
+    position: absolute;
+    top: 10vh;
+    left: 6vw;
+    font-size: 45px;
+    font-weight: bold;
+    color: #4e4b4b;
+}
+
+.container-2 .free-date {
+    width: 80%;
+    height: 35%;
+}
+
+.container-2 .free-date .option.top {
+    width: 100%;
+    height: 74px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(150 150 150 / 42%);
+}
+
+.container-2 .free-date .option {
+    width: 100%;
+    height: 74px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(150 150 150 / 42%);
+}
+
+.container-2 .free-date .option div,
+.container-2 .free-date .option.top div {
+    width: 20%;
+    color: #8f8e8e;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.container-2 .free-date .option div {
+    font-size: 16px;
+}
+
+.container-2 .free-date .option:hover div {
+    background-color: #9bdbe1;
+}
+
+.container-2 .free-date .option.top div {
+    color: white;
+    background-color: #eb3770;
+    font-size: 20px;
+}
+
+.container-2 .free-date .option .add-tur {
+    width: 116px;
+    height: 36px;
+    border-radius: 20px;
+    background-color: #eb3770;
+    color: white;
+    border: none;
 }
 
 .container-3 {
@@ -321,7 +412,7 @@ body {
 .container-4 {
     width: 100%;
     background-color: #efefef;
-    padding-top: 100px;
+    padding-top: 30px;
     padding-bottom: 100px;
 }
 
@@ -352,11 +443,16 @@ body {
     font-weight: bold;
 }
 
+.container-4 .content .day.dop-2 {
+    height: 5%;
+}
+
 .container-4 .content .description {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 92%;
+    justify-content: center;
 }
 
 .container-4 .content .description .line {
