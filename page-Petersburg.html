@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petersburg</title>
+    <link rel="stylesheet" type="text/css" href="./page-Petersburg.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">EUROTRIPS</div>
+        <div class="icons"><span class="material-icons">kayaking</span></div>
+    </div>
+
+    <div class="menu">
+        <div><a href="./index.html">Главная</a></div>
+        <div><a href="#upcoming">Ближайшие даты</a></div>
+        <div><a href="#tur">Программа тура</a></div>
+        <div><a href="#important">Важно!</a></div>
+        <div><a href="#review">Отзывы</a></div>
+
+        <div><a href="#bottom">Контакты</a></div>
+
+    </div>
+    <div class="menu_button">
+        <button onclick="openMenu()"><span class="material-icons">drag_handle</span></button>
+    </div>
+
+    <div class="basket">
+        <div class="basket-2"></div>
+        <div class="sum  sum-dop">Выбранные туры:</div>
+        <div class="sum">Cумма:&#8194;<span class="sum-span"></span> &#8194;BYN</div>
+    </div>
+
+    <div class="basket-container">
+        <button onclick="openBasket()"> <span class="material-icons">shopping_basket</span></button>
+    </div>
+
+    <div class="common">
+
+        <div class="container-1">
+            <div class="city">ТУР В САНКТ-ПЕТЕРБУРГ + КАРЕЛИЯ</div>
+            <div class="direction">Минск&#8594;Cанкт-Петербург&#8594;Минск</div>
+
+        </div>
+        <a id="upcoming"></a>
+        <div class="container-2">
+            <div class="title">БЛИЖАЙШИЕ ДАТЫ</div>
+            <div class="free-date">
+                <div class="option  top">
+                    <div class="tur">Тур</div>
+                    <div class="date">Дата</div>
+                    <div class="price">Цена</div>
+                    <div>Количество мест</div>
+                    <div></div>
+                </div>
+                <div class="option-2"></div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="container-3">
+
+            <div class="title">EUROTRIPS &#8212; ЭТО</div>
+            <div class="content">
+                <div class="description">
+                    <div class="badge"><img src="./assets/badge-1.png"></div>
+                    <div class="text">
+                        <div class="text-title">КРУТАЯ КОМАНДА</div>
+                        <div class="text-description">
+                            В каждый тур едет сопровождающий и фотограф, а в каждом городе тебя ждёт локальный эксперт крутых мест
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="badge"><img src="./assets/badge-4.png"></div>
+                    <div class="text">
+                        <div class="text-title">УНИКАЛЬНЫЕ АКТИВНОСТИ</div>
+                        <div class="text-description">
+                            Самые уникальные маршруты и развлечения по Европе
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="badge"><img src="./assets/badge-3.png"></div>
+                    <div class="text">
+                        <div class="text-title">ТОЛЬКО МОЛОДЁЖЬ</div>
+                        <div class="text-description">
+                            Возвраcт наших туристов говорит сам за себя - 18-35 лет.
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                    <div class="badge"><img src="./assets/badge-2.png"></div>
+                    <div class="text">
+                        <div class="text-title">СВОБОДА ВЫБОРА И ДЕЙСТВИЙ</div>
+                        <div class="text-description">
+                            Выбирай только те активности, которые нравятся и наслаждайся свободным временем в каждой новой точке маршрута
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a id="tur"></a>
+        <div class="container-4">
+
+            <div class="title">ПРОГРАММА ТУРА</div>
+            <div class="content">
+                <div class="day">1 день</div>
+
+                <div class="description">
+
+                    <div class="definition">
+                        <div class="place-title">18:00 ОТПРАВЛЕНИЕ ИЗ МИНСКА</div>
+                        <div class="text">Тур без карантина и ПЦР! <br>Отправление из Минска в 18-00. Ты – в молодёжной группе Eurotrips, часть легендарной #eurotripsfamily.<br> Автобус с музыкой, фильмами и компанией – это только начало. И запомни, как встретишь - так
+                            и проведешь!
+                            <br>Тебя ждёт знакомство с группой, сопровождающим и фотографом, граница, duty free и крутая атмосфера наших путешествий!<br> Ночной переезд в Питер.</div>
+                    </div>
+
+                    <div class="line">
+                        <div></div>
+                        <div class="no-color"></div>
+                        <div></div>
+                    </div>
+
+                    <div class="definition"><img src="./assets/page-2-picture-1.png"></div>
+
+                </div>
+            </div>
+
+            <div class="content  dop-2">
+                <div class="day  dop-2">2 день</div>
+
+                <div class="description">
+                    <div class="definition"><img src="./assets/page-2-picture-2.png"></div>
+                    <div class="line  dop-2">
+                        <div></div>
+                        <div class="no-color"></div>
+                        <div></div>
+                        <div class="no-color"></div>
+                        <div></div>
+                    </div>
+                    <div class="definition">
+                        <div class="place-title">ПРИБЫТИЕ В СЕВЕРНУЮ СТОЛИЦУ - ПИТЕР</div>
+                        <div class="text  dop-2">День начнем с яркой обзорной экскурсии от местного жителя.
+                            <p></p>Посмотрим топовые достопримечательности города и то, что скрыто от глаза неопытного туриста. Окунемся с головой в атмосферу красоты, молодости и свободы.
+                            <p></p>Свободное время изучить город и прогуляться по улицам Петербурга.
+                            <p></p> Рекомендуем, пообедать в ресторане Market Place (Невский пр., 24; Невский пр., 92 и ТРЦ «Галерея», Лиговский пр., 30а) – пожалуй, самое популярное обеденное место в Петербурге.
+                            <p></p>За отменным шоппингом отправляйся в современные торговые центры: «Галерея» (Лиговский пр., 30а) и «Стокман» (Невский пр., 114-116).
+                            <p></p> Ближе к ночи по традиции отправимся исследовать местные бары и лучшие клубы.
+                            <p></p>Бартур будет не совсем обычный.
+                            <p></p>xПосетим 3 нетипичных атмосферных питерских бара, в каждом попробуем фирменные шоты и услышим интересные истории об алкогольной культуре Питера.
+                            <p></p> Ночь в отеле или на танцполе.</div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="content  dop-2">
+                <div class="day  dop-2">3 день</div>
+
+                <div class="description">
+
+                    <div class="definition">
+                        <div class="place-title">КАРЕЛИЯ</div>
+                        <div class="text  dop-2">
+                            <p></p>Завтрак в отеле и свободное время в Питере.
+                            <p></p> По желанию предлагаем экскурсионную поездку в Карелию (не менее 20 человек группа / cтоимость 25€).
+                            <p></p> Переезд в Горный парк «Рускеала».
+                            <p></p>После отправления из Петербурга нас ждет живописная дорога до г. Приозерск.
+                            <p></p>По дороге заедем в эко-ферму покушать знаменитой карельской ухи и продегустировать карельских настоек.
+                            <p></p>Обязательно захватим в качестве презентов друзьям и себе любимому.
+                            <p></p> Посещение водопадов Ахвенкоски. Несмотря на всю завораживающую красоту водопадов Ахвенкоски, всех туристов привлекает сюда прежде всего тот факт, что тут проходили съемки знаменитых фильмов «А зори здесь тихие» и «Темный
+                            мир».
+                            <p></p> Прибытие в горный парк Рускеала и Мраморный каньон.
+                            <p></p> Горный парк Рускеала и мраморный каньон. Можно будет погулять по территории парка и воспользоваться доп.развлечениями.
+                            <p></p>Прием пищи для желающих (за доп.плату).
+                            <p></p> На территории парка располагаются кафе.
+                            <p></p>18:30 - выезд из парка. Отправление в Санкт-Петербург
+
+
+                        </div>
+                    </div>
+
+                    <div class="line  dop-2">
+                        <div></div>
+                        <div class="no-color"></div>
+                        <div></div>
+                        <div class="no-color"></div>
+                        <div></div>
+                    </div>
+
+                    <div class="definition"><img src="./assets/page-2-picture-3.png"></div>
+
+                </div>
+            </div>
+            <div class="content">
+                <div class="day">4 день</div>
+
+                <div class="description">
+                    <div class="definition  dop-3"><img src="./assets/page-2-picture-4.png"></div>
+                    <div class="line">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="definition">
+                        <div class="place-title  dop-3">ЗАВТРАКАЕМ И ЗАГРУЖАЕМ ВЕЩИ В АВТОБУС</div>
+                        <div class="text  dop-3">
+                            <p></p>Дополнительная экскурсия в Петергоф. Музeй-зaпoвeдник, бывшaя резидeнция poccийcкиx импepaтopoв. Kpacивeйшee пpиpoднo-иcтopичecкoe мecтo, кoтopoe пoльзуeтcя пoпуляpнocтью у туpиcтoв. Здecь pacпoлoжeн двopeц, мнoжecтвo музeeв
+                            и кoнeчнo, вeличecтвeнныe фoнтaны. Стоимость 15€.
+                            <p></p>Все знают, что Питер знаменит своими парадными, двориками и крышами, так почему же не начать знакомство именно с этих питерских изюминок.
+                            <p></p>В рамках этой экскурсии мы заглянем в недоступные для широкого круга лиц места и увидим, что скрывается за роскошными фасадами петербургских домов. 93% домов в Петербурге были доходными.
+                            <p></p> Домовладельцы пытались перещеголять друг друга - заказывали дома с расписными фасадами, с уникальными интерьерами парадных, чтобы господа снимавшие квартиры, чувствовали себя комфортно и на высоте. Далее мы поднимемся
+                            на крышу и насладимся восхитительными панорамами Петербурга, услышим городские мифы и легенды.
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="content">
+                <div class="day">5 день</div>
+
+                <div class="description">
+
+                    <div class="definition">
+                        <div class="place-title">ПРИБЫТИЕ В МИНСК В ПЕРВОЙ ПОЛОВИНЕ ДНЯ (ОКОЛО 8-10 УТРА)</div>
+                        <div class="text">
+                            <p></p>Ты приезжаешь, делишься фотографиями в соц сетях, не забываешь ставить хештег #eurotripsfamily, ведь для тебя это уже не просто хештег, теперь ты часть семьи!
+                            <p></p>(!) время прибытия в Минск- ориентировочно, настоятельно не рекомендуем покупать билеты на обратный поезд. цены на экскурсии могут незначительно меняться, в зависимости от сезона или других не зависящих от нас обстоятельств
+                            <p></p>С ноября в программе будут отсутствовать доп экскурсии по крышам и кораблик. Будут предложены альтернативные варианты. Доп выезд в Петергоф будет заменен на экскурсионную программу в Кронштадт
+                            <p></p>ТУР БЕЗ САМОИЗОЛЯЦИИ И ПЦР!</div>
+                    </div>
+
+                    <div class="line">
+                        <div></div>
+                        <div class="no-color"></div>
+                        <div></div>
+                    </div>
+
+                    <div class="definition"><img src="./assets/page-2-picture-5.png"></div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="included">
+            <div class="title">ВКЛЮЧЕНО В ТУР:</div>
+            <div class="text-picture"></div>
+        </div>
+        <a id="important"></a>
+        <div class="container-3  dop-1">
+
+            <div class="title  dop-1">ЧТО ВАЖНО</div>
+
+            <div class="content  dop-1">
+                <div class="description  dop-1 ">
+                    <div class="badge"><img src="./assets/page-1-important-1.png"></div>
+                    <div class="text">
+                        <div class="text-title">БРОНИРУЙ СЕЙЧАС И ПЛАТИ ПОТОМ</div>
+                        <div class="text-description">
+                            Для бронирования гарантированного места в туре достаточно оплатить только тур услугу 50 либо 100 BYN.
+                        </div>
+                    </div>
+                </div>
+                <div class="description  dop-1 ">
+                    <div class="badge"><img src="./assets/page-1-important-2.png"></div>
+                    <div class="text">
+                        <div class="text-title">ЕХАТЬ ОДНОМУ - НЕ СТРАШНО</div>
+                        <div class="text-description">
+                            Если друзья тормозят с решением о путешествии, не отказывайся от новых впечатлений. Ведь в дороге ты найдешь еще 50 новых друзей #eurotripsfamily.
+                        </div>
+                    </div>
+                </div>
+                <div class="description  dop-1 ">
+                    <div class="badge"><img src="./assets/page-1-important-3.png"></div>
+                    <div class="text">
+                        <div class="text-title">ДОКУМЕНТЫ В ДОРОГУ</div>
+                        <div class="text-description">
+                            Для въезда на территорию ЕС необходима шенген виза (для граждан РБ и РФ) и паспорт не старше 10 лет. Если ты еще не обладатель шенген визы, то наши партнёры помогут с ее открытием.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="content  dop-2">
+                <div class="description  dop-1 ">
+                    <div class="badge"><img src="./assets/page-1-important-4.png"></div>
+                    <div class="text">
+                        <div class="text-title">ВОЗВРАТ ОПЛАТЫ</div>
+                        <div class="text-description">
+                            Сроки расторжения и отмены тура будут указаны в твоём договоре. Как правило, по основным маршрутам расторжение договора без штрафа не позднее, чем за 14 дней до выезда.
+                        </div>
+                    </div>
+                </div>
+                <div class="description  dop-1 ">
+                    <div class="badge"><img src="./assets/page-1-important-5.png"></div>
+                    <div class="text">
+                        <div class="text-title">КОМФОРТ ПРЕВЫШЕ ВСЕГО</div>
+                        <div class="text-description">
+                            Автобусы, на которых мы катаем в Европу, просторные и комфортные для длительных переездов. Сиденья откидываются, есть музыка, телевизоры и, конечно, кондиционеры.
+                        </div>
+                    </div>
+                </div>
+                <div class="description  dop-1 ">
+                    <div class="badge"><img src="./assets/page-1-important-6.png"></div>
+                    <div class="text">
+                        <div class="text-title">#EUROTRIPSFAMILY</div>
+                        <div class="text-description">
+                            Каждый наш турист после первой поездки получает скидку 50 % на тур услугу + для наших клиентов часто проходят акции, вечеринки и предоставляются бонусы
+                        </div>
+                    </div>
+                </div>
+                <a id="review"></a>
+            </div>
+            <div class="container-6">
+                <div class="review-title">ОТЗЫВЫ</div>
+                <div class="review-button">
+                    <button class="prev" onclick="prevReview()"><span class="material-icons">arrow_back_ios</span></button>
+                    <button class="next" onclick="nextReview()"><span class="material-icons">arrow_forward_ios</span></button>
+                </div>
+                <div class="form-container">
+                    <div class="form"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-5-1">
+            <div class="container-5">
+                <div class="contact">КОНТАКТЫ</div>
+                <div class="content  type-1">
+                    <div class="content-1"> В Республике Беларусь:<br>ОФИС ПРОДАЖ<br></div>
+                    <div class="content-2">
+                        <div><span class="material-icons">place</span></div>
+                        <div class="address">ул. Чернышевского, 5<br>Верхний этаж</div>
+                    </div>
+                    <div class="content-2">
+                        <div><span class="material-icons">phone_in_talk</span></div>
+                        <div class="address">тел.: +375 17 369 02 75<br> +375 33 613 05 35</div>
+                    </div>
+                    <div>travel@gmail.com</div>
+
+                </div>
+
+                <div class="content  type-2">
+                    <div class="content-1  content-dop">В Европе:</div>
+
+                    <div class="button-ua">Украина
+                        <button onclick="openInfoUA ()">
+                        <span class="material-icons">keyboard_arrow_down</span>
+                    </button>
+                        <div class="ua-address">Киев, Крещатик, Kyiv Worlking 3 этаж<br>info@travel.ua</div>
+                    </div>
+
+                    <div class="button-pol">Польша
+                        <button onclick="openInfoPol ()">
+                        <span class="material-icons">keyboard_arrow_down</span>
+                    </button>
+                        <div class="pol-address">Вроцлав 50, 2 этаж, пом. 26<br>travel.poland@gmail.com</div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <a id="bottom"></a>
+        <div id="confirmDialog" class="dialog-container">
+            <div class="dialog">
+                <div class="dialog-content">
+                    <div class="text-title">Остались вопросы?</div>
+                    <div class="text"> Оставьте номер телефона и наш менеджер свяжется с вами в ближайшее время</div>
+
+                </div>
+                <div class="dialog-input">
+                    <input type="tel" placeholder="+375 ( )  -  -">
+                    <button class="send-button">Oтправить</button>
+                </div>
+                <div class="close-button">
+                    <button id="close-button"><span class="material-icons">close</span></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let confirmDialogElement = document.getElementById('confirmDialog');
+        let closeButtonElement = document.getElementById('close-button');
+        let closeButton_2Element = document.querySelector('.send-button')
+        closeButtonElement.addEventListener('click', closeDialog);
+        closeButton_2Element.addEventListener('click', closeDialog);
+
+        // let confirmDialogTimeout = setTimeout(openDialog, 8000)
+
+
+        function openDialog() {
+            confirmDialogElement.classList.add('show')
+        }
+
+
+        function closeDialog() {
+            confirmDialogElement.classList.remove('show')
+        }
+    </script>
+
+    <script>
+        let uaAddressElement = document.querySelector('.ua-address')
+        let buttonUAElement = document.querySelector('.button-ua')
+        let polAddress = document.querySelector('.pol-address')
+        let contentElement = document.querySelector('.content-dop')
+
+        function openInfoUA() {
+            uaAddressElement.classList.toggle('ua-address-open')
+            buttonUAElement.classList.toggle('button-ua-down')
+
+        }
+
+        function openInfoPol() {
+            polAddress.classList.toggle('pol-address-open')
+            contentElement.classList.toggle('open-content-1')
+
+        }
+
+
+        let openMenuElement = document.querySelector('.menu');
+
+        function openMenu() {
+            openMenuElement.classList.toggle('open_menu')
+
+        }
+    </script>
+    <script src="./basket.js"></script>
+    <script src="./review.js"></script>
+</body>
+
+</html>

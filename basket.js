@@ -20,7 +20,7 @@ let freeDateElement = document.querySelector('.option-2')
 let basketElement = document.querySelector('.basket');
 let basket2Element = document.querySelector('.basket-2');
 let sumElement = document.querySelector('.sum-span')
-let startInterval;
+
 
 
 const bucketItems = [];

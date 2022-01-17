@@ -371,13 +371,45 @@
 
             </div>
         </div>
-
-
-
-
-
         <a id="bottom"></a>
+        <div id="confirmDialog" class="dialog-container">
+            <div class="dialog">
+                <div class="dialog-content">
+                    <div class="text-title">Остались вопросы?</div>
+                    <div class="text"> Оставьте номер телефона и наш менеджер свяжется с вами в ближайшее время</div>
+
+                </div>
+                <div class="dialog-input">
+                    <input type="tel" placeholder="+375 ( )  -  -">
+                    <button class="send-button">Oтправить</button>
+                </div>
+                <div class="close-button">
+                    <button id="close-button"><span class="material-icons">close</span></button>
+                </div>
+
+            </div>
+        </div>
     </div>
+
+    <script>
+        let confirmDialogElement = document.getElementById('confirmDialog');
+        let closeButtonElement = document.getElementById('close-button');
+        let closeButton_2Element = document.querySelector('.send-button')
+        closeButtonElement.addEventListener('click', closeDialog);
+        closeButton_2Element.addEventListener('click', closeDialog);
+
+        let confirmDialogTimeout = setTimeout(openDialog, 8000)
+
+
+        function openDialog() {
+            confirmDialogElement.classList.add('show')
+        }
+
+
+        function closeDialog() {
+            confirmDialogElement.classList.remove('show')
+        }
+    </script>
 
     <script>
         let uaAddressElement = document.querySelector('.ua-address')
