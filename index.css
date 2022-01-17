@@ -7,6 +7,10 @@ body {
     margin: 0px;
 }
 
+.add-scroll {
+    scroll-behavior: smooth;
+}
+
 .material-icons {
     font-family: Material Icons;
 }
@@ -24,7 +28,7 @@ body {
     -webkit-box-shadow: 0px 11px 13px 3px rgba(0, 0, 0, 0.41);
     -moz-box-shadow: 0px 11px 13px 3px rgba(0, 0, 0, 0.41);
     color: #0000009c;
-    z-index: 1;
+    z-index: 4;
     background-color: white;
 }
 
@@ -40,7 +44,7 @@ body {
     position: fixed;
     top: 10px;
     left: 20px;
-    z-index: 1;
+    z-index: 5;
 }
 
 .menu_button span {
@@ -60,7 +64,7 @@ body {
     width: 22%;
     height: 90vh;
     background-color: #4e4b4bd4;
-    z-index: 1;
+    z-index: 5;
     transition: left 0.4s linear;
     display: flex;
     flex-direction: column;
@@ -736,7 +740,7 @@ body {
     position: fixed;
     top: 10px;
     right: 20px;
-    z-index: 1;
+    z-index: 5;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -759,7 +763,7 @@ body {
     width: 55%;
     min-height: 44%;
     background-color: white;
-    z-index: 1;
+    z-index: 5;
     transition: right 0.5s ease-in-out;
     display: flex;
     flex-direction: column;

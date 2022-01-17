@@ -11,6 +11,10 @@ body {
     font-family: Material Icons;
 }
 
+.add-scroll {
+    scroll-behavior: smooth;
+}
+
 .head {
     position: fixed;
     top: 0px;
