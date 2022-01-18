@@ -11,6 +11,40 @@ body {
     font-family: Material Icons;
 }
 
+.modal {
+    width: 25%;
+    height: 20%;
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+    top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    /* box-shadow: 0px 11px 13px 3px rgb(0 0 0 / 41%); */
+    -webkit-box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 41%);
+    -moz-box-shadow: 0px 11px 13px 3px rgba(0, 0, 0, 0.41);
+}
+
+.show-modal {
+    display: flex;
+}
+
+.modal .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    font-size: 25px;
+    color: #636363;
+    border-top: rgba(128, 128, 128, 0.262) 1px solid;
+    border-bottom: rgba(128, 128, 128, 0.262) 1px solid;
+}
+
 .add-scroll {
     scroll-behavior: smooth;
 }
@@ -258,7 +292,7 @@ body {
 
 .container-2 {
     width: 100%;
-    height: 72vh;
+    height: 82vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -278,12 +312,13 @@ body {
 
 .container-2 .free-date {
     width: 80%;
-    height: 35%;
+    margin-top: 80px;
+    height: 50%;
 }
 
 .container-2 .free-date .option.top {
     width: 100%;
-    height: 74px;
+    height: 65px;
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid rgb(150 150 150 / 42%);
@@ -291,7 +326,7 @@ body {
 
 .container-2 .free-date .option {
     width: 100%;
-    height: 74px;
+    height: 65px;
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid rgb(150 150 150 / 42%);

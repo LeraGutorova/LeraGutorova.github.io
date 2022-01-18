@@ -13,17 +13,36 @@ let products = [{
         price: '237BYN',
         sumPlace: '35',
     },
-
+    {
+        id: 3,
+        namePlace: 'Львов 1 ноч + Карпаты',
+        date: '26.01-30.01',
+        price: '170BYN',
+        sumPlace: '24',
+    },
+    {
+        id: 4,
+        namePlace: 'Киев + Чернобыль',
+        date: '02.01-07.01',
+        price: '300BYN',
+        sumPlace: '29',
+    },
 ]
 
-let freeDateElement = document.querySelector('.option-2')
+let TurElement = document.querySelector('.option-container')
 let basketElement = document.querySelector('.basket');
 let basket2Element = document.querySelector('.basket-2');
 let sumElement = document.querySelector('.sum-span')
+let modalElement = document.querySelector('.modal')
 
 
 
-const bucketItems = [];
+let KEY_BASKET = 'bucketItems'
+
+
+
+
+const bucketItems = localStorage.getItem(KEY_BASKET) || [];
 let sum = 0;
 
 
@@ -43,13 +62,15 @@ function renderProducts() {
 <div class="add"><button onclick="addToBucket(${product.id})" class="add-tur">Оставить заявку</button></div>
 </div>`
     }
-    freeDateElement.innerHTML = html;
+    TurElement.innerHTML = html;
 }
 
 function openBasket() {
     basketElement.classList.toggle('open_basket')
 
 }
+
+
 
 function renderBucket() {
     let html = '';
@@ -64,43 +85,57 @@ function renderBucket() {
  </div>`
 
     }
+    localStorage.setItem('KEY_BASKET', bucketItems)
+    renderSum()
+
     basket2Element.innerHTML = html;
-    // renderSum()
+
 
 }
 
 function removeFromBucket(productId) {
     bucketItems.splice(productId, 1);
-    let number = parseInt(bucketItems[productId].price)
-    if (number == 262) {
-        sum -= 262
-    }
-    sum -= 237
 
-    sumElement.innerHTML = sum
+    // let number = parseInt(bucketItems[productId].price)
+
+    // if (number == 262) {
+    //     sum -= 262
+    // }
+    // sum -= 237
+
+    // sumElement.innerHTML = sum
     renderBucket()
 
 
 }
 
-// function renderSum() {
-//     for (let i = 0; i < bucketItemsength; i++) {
-//         let productPrice = bucketItems[i].price;
-//         sum += parseInt(productPrice);
-//     }
-//     sumElement.innerHTML = sum
+function renderSum() {
+    for (let i = 0; i < bucketItems.length; i++) {
+        let productPrice = bucketItems[i].price;
+        sum += parseInt(productPrice);
+    }
+    sumElement.innerHTML = sum
 
-// }
+}
 let productPrice = ''
+let modalTimeout
+let close
 
 function addToBucket(productId) {
     const product = products.find(item => item.id === productId);
     bucketItems.push(product);
+
     renderBucket()
-    productPrice = bucketItems[productId - 1].price;
-    sum += parseInt(productPrice);
+    modalTimeout = setTimeout(openModal, 0)
 
-    sumElement.innerHTML = sum
+}
 
-    // alert("Тур добавлен в корзину")
+function openModal() {
+    modalElement.classList.add('show-modal')
+    close = setTimeout(closeModal, 1000);
+
+}
+
+function closeModal() {
+    modalElement.classList.remove('show-modal')
 }
