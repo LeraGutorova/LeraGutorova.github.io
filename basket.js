@@ -38,12 +38,13 @@ let modalElement = document.querySelector('.modal')
 
 
 let KEY_BASKET = 'bucketItems'
+let KEY_SUM = 'sum'
 
 
 
 
 const bucketItems = localStorage.getItem(KEY_BASKET) || [];
-let sum = 0;
+let sum = localStorage.getItem(KEY_SUM) || 0;
 
 
 renderProducts()
@@ -115,6 +116,7 @@ function renderSum() {
         sum += parseInt(productPrice);
     }
     sumElement.innerHTML = sum
+    localStorage.setItem(KEY_SUM, sum)
 
 }
 let productPrice = ''
