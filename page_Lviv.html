@@ -31,9 +31,12 @@
     </div>
 
     <div class="basket">
-        <div class="basket-2"></div>
         <div class="sum  sum-dop">Выбранные туры:</div>
         <div class="sum">Cумма:&#8194;<span class="sum-span"></span> &#8194;BYN</div>
+        <div id="basket-2" class="basket-2"></div>
+    </div>
+    <div class="modal">
+        <div class="title">Товар добавлен в корзину</div>
     </div>
 
     <div class="basket-container">
@@ -58,7 +61,7 @@
                     <div>Количество мест</div>
                     <div></div>
                 </div>
-                <div class="option-2"></div>
+                <div class="option-container"></div>
 
             </div>
 
@@ -391,7 +394,7 @@
         </div>
     </div>
 
-    <script src="./confirmDialog.js"></script>
+
 
     <script>
         let openMenuElement = document.querySelector('.menu');
@@ -409,7 +412,7 @@
             htmlScrollElement.classList.add('add-scroll')
         }
     </script>
-
+    <!-- <script src="./confirmDialog.js"></script> -->
     <script src="./contact.js"></script>
     <script src="./basket.js"></script>
     <script src="./review.js"></script>
